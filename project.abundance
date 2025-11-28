@@ -1,13 +1,158 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-80",
-    "name": "cut",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-80",
+  "name": "cut",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-81"
+    },
+    {
+      "atomType": "Text",
+      "x": 0.16359356610435463,
+      "y": 0.4277978339350181,
+      "uniqueID": "id-83",
+      "ioValues": [
+        {
+          "name": "Font Size",
+          "ioValue": 100,
+          "currentEquation": "100"
+        },
+        {
+          "name": "Text",
+          "ioValue": "M"
+        }
+      ],
+      "fontFamily": "AGUAFINA",
+      "selectedFontIndex": 5
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.37661828167908984,
+      "y": 0.6389891696750903,
+      "uniqueID": "id-87",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 100,
+          "currentEquation": "100"
+        },
+        {
+          "name": "y length",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.2310710082385249,
+      "y": 0.5577617328519856,
+      "uniqueID": "id-91",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": -43,
+          "currentEquation": "-43"
+        },
+        {
+          "name": "yDist",
+          "ioValue": -35,
+          "currentEquation": "-35"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.329933307179286,
+      "y": 0.3646209386281588,
+      "uniqueID": "id-97"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.46763436641820316,
+      "y": 0.3212996389891697,
+      "uniqueID": "id-101",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.5837583366025892,
+      "y": 0.45126353790613716,
+      "uniqueID": "id-105",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "cut"
+        }
+      ],
+      "partName": "cut",
+      "sortDirection": "Left"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-83",
+      "ap2ID": "id-91"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-87",
+      "ap2ID": "id-97"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-91",
+      "ap2ID": "id-97"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-97",
+      "ap2ID": "id-101"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-101",
+      "ap2ID": "id-105"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-105",
+      "ap2ID": "id-81"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
