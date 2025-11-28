@@ -102,7 +102,8 @@
         },
         {
           "name": "Passes",
-          "ioValue": 1
+          "ioValue": 3,
+          "currentEquation": "3"
         },
         {
           "name": "Speed",
